@@ -25,11 +25,11 @@ class ViewController: UIViewController {
                 
                 if let destinationVC = segue.destinationViewController as? GeneratedNameViewController{
                     
-                    destinationVC.newFName = "\(substring(inputFirstName.text!.startIndex, finish: inputFirstName.text!.startIndex.advancedBy(3), str: inputFirstName.text!)) \( substring(inputLastName.text!.startIndex, finish: inputLastName.text!.startIndex.advancedBy(2), str: inputLastName.text!).lowercaseString)"
+                    destinationVC.newFName = "\(substring(inputFirstName.text!.startIndex, finish: inputFirstName.text!.startIndex.advancedBy(3), str: inputFirstName.text!))\( substring(inputLastName.text!.startIndex, finish: inputLastName.text!.startIndex.advancedBy(2), str: inputLastName.text!).lowercaseString)"
                     
-                    destinationVC.newLName = "\(substring(inputMaidenName.text!.startIndex, finish: inputMaidenName.text!.startIndex.advancedBy(2), str: inputMaidenName.text!)) \( substring(inputBirthplace.text!.startIndex, finish: inputBirthplace.text!.startIndex.advancedBy(3), str: inputBirthplace.text!).lowercaseString)"
+                    destinationVC.newLName = "\(substring(inputMaidenName.text!.startIndex, finish: inputMaidenName.text!.startIndex.advancedBy(2), str: inputMaidenName.text!))\( substring(inputBirthplace.text!.startIndex, finish: inputBirthplace.text!.startIndex.advancedBy(3), str: inputBirthplace.text!).lowercaseString)"
                     
-                    destinationVC.newPName = "\(substring(inputMaidenName.text!.endIndex.advancedBy(-2), finish: inputMaidenName.text!.endIndex, str: inputMaidenName.text!)) \( inputFavBrand.text!.lowercaseString)"
+                    destinationVC.newPName = "\(substring(inputMaidenName.text!.endIndex.advancedBy(-2), finish: inputMaidenName.text!.endIndex, str: inputMaidenName.text!))\( inputFavBrand.text!.lowercaseString)"
                 }
                     
       
